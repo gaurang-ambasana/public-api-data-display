@@ -1,6 +1,7 @@
 import "./App.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 
 const fetchData = async () => {
   const { data } = await axios.get(`https://randomuser.me/api/?results=20`);
@@ -25,6 +26,14 @@ const App = () => {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Random User Data</title>
+        <meta
+          name="description"
+          content="Random User Data with live search bar"
+        />
+      </Helmet>
       <input
         type="text"
         name="searchBar"
