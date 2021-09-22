@@ -61,8 +61,8 @@ const App = () => {
         <tbody>
           {people &&
             searchPeople(people, searchText).map((person, id) => (
-              <tr key={id}>
-                <td>{++id}</td>
+              <tr key={id + 1}>
+                <td>{id + 1}</td>
                 <td>
                   <img src={person.picture.thumbnail} alt="img" />
                 </td>
