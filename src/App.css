@@ -37,12 +37,19 @@
   }
 }
 
-table {
+table,
+input {
   text-align: center;
   font-family: "Google Sans";
   font-size: large;
   margin: 10px auto 10px auto;
   border-collapse: collapse;
+}
+
+input[type="text"] {
+  display: block;
+  margin: 5px auto;
+  width: 20%;
 }
 
 td,
