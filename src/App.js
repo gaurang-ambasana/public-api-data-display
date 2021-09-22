@@ -13,7 +13,7 @@ const fetchData = async () => {
 
 const searchPeople = (data, searchString) =>
   data.filter((row) =>
-    JSON.stringify(row).toLowerCase().includes(searchString)
+    JSON.stringify(row).toLowerCase().includes(searchString.toLowerCase())
   );
 
 const App = () => {
