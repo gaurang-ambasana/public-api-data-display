@@ -1,4 +1,4 @@
-##Random User Data
+## Random User Data
 
 Live : https://random-people-data.netlify.app/
 
